@@ -9179,6 +9179,7 @@ class ProviderConfigManager:
             LlmProviders.XAI: litellm.XAIModelInfo,
             LlmProviders.LEMONADE: litellm.LemonadeChatConfig,
             LlmProviders.CLARIFAI: litellm.ClarifaiConfig,
+            LlmProviders.DATAROBOT: litellm.DataRobotConfig,
         }
         if provider in simple_configs:
             return simple_configs[provider]()
